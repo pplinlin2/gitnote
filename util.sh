@@ -4,7 +4,7 @@ RED='\e[31m'
 END='\e[0m'
 
 function msg(){
-	echo -e ${BLUE}$@${END}
+	echo -e ${BLUE}"$@"${END}
 }
 
 function alert(){
