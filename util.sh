@@ -15,3 +15,9 @@ function cmd(){
 	echo -e ${CYAN}$@${END}
 	eval $@
 }
+
+function inspect_d(){
+	cmd "git diff"
+	cmd "git diff HEAD"
+	cmd "git diff --cached"
+}

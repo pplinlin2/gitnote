@@ -9,12 +9,6 @@ function flow_d(){
 	msg "Object store: A A A A B"
 }
 
-function inspect_d(){
-	cmd "git diff"
-	cmd "git diff HEAD"
-	cmd "git diff --cached"
-}
-
 cmd "mkdir diff_example"
 cmd "cd diff_example"
 cmd "git init"
