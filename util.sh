@@ -16,6 +16,10 @@ function cmd(){
 	eval $@
 }
 
+function silent(){
+	eval $@ > /dev/null 2>&1
+}
+
 function inspect_d(){
 	cmd "git diff"
 	cmd "git diff HEAD"

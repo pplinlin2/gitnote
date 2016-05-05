@@ -4,6 +4,7 @@ all:
 	@echo 'm: merges'
 	@echo 'a1: altering_commits'
 	@echo 'a2: amend'
+	@echo 'a3: rebase'
 
 b:
 	@./basic_git_concepts.sh
@@ -18,6 +19,8 @@ a1:
 	@./altering_commits.sh
 a2:
 	@./amend.sh
+a3:
+	@./rebase.sh
 
 clean:
-	-rm -rf hello diff_example conflict reset amend
+	-rm -rf hello diff_example conflict reset amend rebase
