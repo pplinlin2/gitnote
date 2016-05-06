@@ -5,6 +5,7 @@ all:
 	@echo 'a1: altering_commits'
 	@echo 'a2: amend'
 	@echo 'a3: rebase'
+	@echo 'p: patches'
 
 b:
 	@./basic_git_concepts.sh
@@ -22,5 +23,8 @@ a2:
 a3:
 	@./rebase.sh
 
+p:
+	@./patches.sh
+
 clean:
-	-rm -rf hello diff_example conflict reset amend rebase
+	-rm -rf hello diff_example conflict reset amend rebase patch

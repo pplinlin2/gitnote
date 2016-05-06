@@ -25,3 +25,11 @@ function inspect_d(){
 	cmd "git diff HEAD"
 	cmd "git diff --cached"
 }
+
+function init(){
+	cmd "mkdir $@"
+	cmd "cd $@"
+	cmd "git init"
+	git config user.name "Alice"
+	git config user.email "alice@qoo.con"
+}
