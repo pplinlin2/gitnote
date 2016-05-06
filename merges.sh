@@ -1,11 +1,6 @@
 #!/bin/bash
 source util.sh
-
-cmd "mkdir conflict"
-cmd "cd conflict"
-cmd "git init"
-git config user.name "Alice"
-git config user.email "alice@qoo.con"
+init conflict
 
 msg "[Merging Two Branches]"
 cat > file << EOF

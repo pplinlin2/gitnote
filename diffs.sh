@@ -1,5 +1,6 @@
 #!/bin/bash
 source util.sh
+init diff_example
 
 function flow_d(){
 	str=`python -c "print ' '*(12 + 2*$1) + '*'"`
@@ -8,12 +9,6 @@ function flow_d(){
 	msg "Index:        A A B B B"
 	msg "Object store: A A A A B"
 }
-
-cmd "mkdir diff_example"
-cmd "cd diff_example"
-cmd "git init"
-git config user.name "Alice"
-git config user.email "alice@qoo.con"
 
 msg "[Simple git diff Example]"
 cmd "echo 'foo' > file1"

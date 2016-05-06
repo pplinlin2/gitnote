@@ -1,11 +1,6 @@
 #!/bin/bash
 source util.sh
-
-cmd "mkdir hello"
-cmd "cd hello"
-cmd "git init"
-git config user.name "Alice"
-git config user.email "alice@qoo.con"
+init hello
 
 cmd "find .git/objects/"
 msg "[Objects, Hashes, and Blobs]"

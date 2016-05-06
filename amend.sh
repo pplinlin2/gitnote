@@ -1,11 +1,6 @@
 #!/bin/bash
 source util.sh
-
-cmd "mkdir amend"
-cmd "cd amend"
-cmd "git init"
-git config user.name "Alice"
-git config user.email "alice@qoo.con"
+init amend
 
 msg "[Changing the Top Commit]"
 msg "from: A - B - C"

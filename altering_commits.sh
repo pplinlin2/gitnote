@@ -9,11 +9,7 @@ function flow_a(){
 	msg "Object store: A A A"
 }
 
-cmd "mkdir reset"
-cmd "cd reset"
-cmd "git init"
-git config user.name "Alice"
-git config user.email "alice@qoo.con"
+init reset
 
 msg "[Using git reset]"
 cmd "echo 'foo' > master_file"

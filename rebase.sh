@@ -1,11 +1,6 @@
 #!/bin/bash
 source util.sh
-
-mkdir rebase
-cd rebase
-silent "git init"
-git config user.name "Alice"
-git config user.email "alice@qoo.con"
+init rebase
 
 echo 'A' >> file1
 git add file1
